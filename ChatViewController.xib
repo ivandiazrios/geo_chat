@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController">
+            <connections>
+                <outlet property="keyBoardHeight" destination="Kkq-lR-sba" id="GFm-Uz-f4x"/>
+                <outlet property="navBar" destination="Fl8-M1-TIG" id="AzO-Lx-T8h"/>
+                <outlet property="sendButton" destination="cM1-Wv-2hL" id="yCR-hk-Ha9"/>
+                <outlet property="tableView" destination="N6d-8o-upM" id="eQs-yF-toj"/>
+                <outlet property="textField" destination="v70-2D-IFQ" id="fjA-2J-8SM"/>
+                <outlet property="view" destination="hot-ZA-wLD" id="bP7-CR-EwS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hot-ZA-wLD">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G70-Lw-g0H" userLabel="Toolbar">
+                    <rect key="frame" x="0.0" y="532" width="320" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM1-Wv-2hL">
+                            <rect key="frame" x="271" y="3" width="46" height="30"/>
+                            <state key="normal" title="Send">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="send" destination="-1" eventType="touchUpInside" id="UD0-dH-kOp"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v70-2D-IFQ">
+                            <rect key="frame" x="3" y="3" width="267" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="FnI-6e-Blc"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="YlV-HP-tjh"/>
+                    </constraints>
+                </view>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fl8-M1-TIG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="VIc-CE-04c"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="Conversation" id="29A-HH-mqW">
+                            <barButtonItem key="backBarButtonItem" title="Back" id="foQ-Cu-jPo"/>
+                            <barButtonItem key="leftBarButtonItem" title="Back" id="0bS-T2-JNI">
+                                <connections>
+                                    <action selector="back:" destination="-1" id="15m-Zj-OLp"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" image="ban" id="XHu-Pu-afZ">
+                                <connections>
+                                    <action selector="blockButtonPressed:" destination="-1" id="fdW-78-Xt5"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="N6d-8o-upM">
+                    <rect key="frame" x="0.0" y="44" width="320" height="488"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="490" id="51C-C6-O7j"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="snV-mc-Gwj"/>
+                        <outlet property="delegate" destination="-1" id="bqM-dN-PmZ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="N6d-8o-upM" firstAttribute="leading" secondItem="hot-ZA-wLD" secondAttribute="leading" id="3lV-y4-qLk"/>
+                <constraint firstAttribute="trailing" secondItem="Fl8-M1-TIG" secondAttribute="trailing" id="7cm-nD-FSO"/>
+                <constraint firstItem="Fl8-M1-TIG" firstAttribute="top" secondItem="hot-ZA-wLD" secondAttribute="top" id="83D-yN-1HN"/>
+                <constraint firstItem="N6d-8o-upM" firstAttribute="top" secondItem="Fl8-M1-TIG" secondAttribute="bottom" id="8dm-MI-l2i"/>
+                <constraint firstItem="Fl8-M1-TIG" firstAttribute="leading" secondItem="hot-ZA-wLD" secondAttribute="leading" id="FUm-Qh-yvp"/>
+                <constraint firstAttribute="trailing" secondItem="N6d-8o-upM" secondAttribute="trailing" id="K68-Dm-1Rg"/>
+                <constraint firstAttribute="bottom" secondItem="G70-Lw-g0H" secondAttribute="bottom" id="Kkq-lR-sba"/>
+                <constraint firstAttribute="trailing" secondItem="G70-Lw-g0H" secondAttribute="trailing" id="SNH-Dd-be6"/>
+                <constraint firstItem="G70-Lw-g0H" firstAttribute="top" secondItem="N6d-8o-upM" secondAttribute="bottom" id="Td6-2c-AjR"/>
+                <constraint firstItem="G70-Lw-g0H" firstAttribute="leading" secondItem="hot-ZA-wLD" secondAttribute="leading" id="tsf-vP-cWy"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="NvS-mR-QHn" appends="YES" id="axO-2M-CuB"/>
+            </connections>
+            <point key="canvasLocation" x="418" y="652"/>
+        </view>
+        <tapGestureRecognizer id="NvS-mR-QHn">
+            <connections>
+                <action selector="hideKeyboard" destination="-1" id="EkL-8s-tpE"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ban" width="30" height="30"/>
+    </resources>
+</document>

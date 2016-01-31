@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C4454921B2AD73600C879A4 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4454911B2AD73600C879A4 /* Post.m */; };
+		2C4454941B2AD99700C879A4 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4454931B2AD99700C879A4 /* PostCell.xib */; };
+		2C86AB7A1B1DD28C00D31560 /* Conversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86AB791B1DD28C00D31560 /* Conversation.m */; };
+		2C86AB831B1DDA5E00D31560 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86AB811B1DDA5E00D31560 /* ChatViewController.m */; };
+		2C86AB841B1DDA5E00D31560 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C86AB821B1DDA5E00D31560 /* ChatViewController.xib */; };
+		2C947DAB1B18AF280080A3F6 /* FindCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C947DAA1B18AF280080A3F6 /* FindCell.xib */; };
+		2C9B51051B29E97D0020A2F6 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B51041B29E97D0020A2F6 /* MeViewController.m */; };
+		2CB1B3CF1B1F88DB005B0E6E /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB1B3CE1B1F88DB005B0E6E /* ChatCell.xib */; };
+		2CC8019F1B14B2920036E701 /* NewMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC8019D1B14B2920036E701 /* NewMessageViewController.m */; };
+		2CC801A91B14C8B70036E701 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC801A81B14C8B70036E701 /* NavigationViewController.m */; };
+		2CE68B851B232211001CE492 /* ConversationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE68B841B232211001CE492 /* ConversationCell.xib */; };
+		2CF09F801B147CE100502E2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF09F7F1B147CE100502E2D /* main.m */; };
+		2CF09F831B147CE100502E2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF09F821B147CE100502E2D /* AppDelegate.m */; };
+		2CF09F861B147CE100502E2D /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF09F851B147CE100502E2D /* FindViewController.m */; };
+		2CF09F891B147CE100502E2D /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF09F881B147CE100502E2D /* ChatTableViewController.m */; };
+		2CF09F8C1B147CE100502E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF09F8A1B147CE100502E2D /* Main.storyboard */; };
+		2CF09F911B147CE100502E2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF09F8F1B147CE100502E2D /* LaunchScreen.xib */; };
+		2CF09F9D1B147CE100502E2D /* GeoChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF09F9C1B147CE100502E2D /* GeoChatTests.m */; };
+		2CF09FAB1B1485BF00502E2D /* RegisterDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF09FA91B1485BF00502E2D /* RegisterDeviceController.m */; };
+		2CF09FAC1B1485BF00502E2D /* RegisterDeviceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF09FAA1B1485BF00502E2D /* RegisterDeviceController.xib */; };
+		2CF09FAF1B14882000502E2D /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF09FAE1B14882000502E2D /* TabViewController.m */; };
+		2CF9A3DA1B1606A000AD1C3C /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9A3D91B1606A000AD1C3C /* Message.m */; };
+		2CF9A3DD1B163BDB00AD1C3C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF9A3DC1B163BDB00AD1C3C /* CoreLocation.framework */; };
+		2CFFCD781B21CBFA00695ADF /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFFCD771B21CBFA00695ADF /* ChatCell.m */; };
+		2CFFCDB11B21E9E100695ADF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFFCDB01B21E9E100695ADF /* libsqlite3.dylib */; };
+		2CFFCDB51B21EA3400695ADF /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFFCDB41B21EA3400695ADF /* DBManager.m */; };
+		D8043A041B2068B700FB31EC /* UIColor+UIColor_CustomScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D8043A031B2068B700FB31EC /* UIColor+UIColor_CustomScheme.m */; };
+		D8043A0A1B20827B00FB31EC /* GlobalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8043A091B20827B00FB31EC /* GlobalViewController.m */; };
+		D8043A0C1B2083A200FB31EC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8043A0B1B2083A200FB31EC /* MapKit.framework */; };
+		D817F2EE1B21EDB000106AB4 /* ChatDB.sql in Resources */ = {isa = PBXBuildFile; fileRef = D817F2ED1B21EDB000106AB4 /* ChatDB.sql */; };
+		D83552031B29BB0C0060CD12 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83552021B29BB0C0060CD12 /* SettingsViewController.m */; };
+		D83C122D1B28E57D008D0E50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83C122C1B28E57D008D0E50 /* Images.xcassets */; };
+		D8958DAC1B1E0C8700BA9AFC /* FindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8958DAB1B1E0C8700BA9AFC /* FindTableViewController.m */; };
+		D8958DAF1B1F781600BA9AFC /* AddScoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D8958DAE1B1F781600BA9AFC /* AddScoreButton.m */; };
+		D8C8222D1B234FEA00065F47 /* NetworkMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C8222C1B234FEA00065F47 /* NetworkMethods.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CF09F971B147CE100502E2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF09F721B147CE100502E2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF09F791B147CE100502E2D;
+			remoteInfo = GeoChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C4454901B2AD73600C879A4 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		2C4454911B2AD73600C879A4 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		2C4454931B2AD99700C879A4 /* PostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		2C86AB781B1DD28C00D31560 /* Conversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversation.h; sourceTree = "<group>"; };
+		2C86AB791B1DD28C00D31560 /* Conversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversation.m; sourceTree = "<group>"; };
+		2C86AB801B1DDA5E00D31560 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		2C86AB811B1DDA5E00D31560 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		2C86AB821B1DDA5E00D31560 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		2C947DAA1B18AF280080A3F6 /* FindCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindCell.xib; sourceTree = "<group>"; };
+		2C9B51031B29E97D0020A2F6 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		2C9B51041B29E97D0020A2F6 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		2CB1B3CE1B1F88DB005B0E6E /* ChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		2CC8019C1B14B2920036E701 /* NewMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMessageViewController.h; sourceTree = "<group>"; };
+		2CC8019D1B14B2920036E701 /* NewMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMessageViewController.m; sourceTree = "<group>"; };
+		2CC801A71B14C8B70036E701 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		2CC801A81B14C8B70036E701 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		2CD9AF801B17596500A7069F /* FindTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindTableViewController.h; sourceTree = "<group>"; };
+		2CE68B841B232211001CE492 /* ConversationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConversationCell.xib; sourceTree = "<group>"; };
+		2CF09F7A1B147CE100502E2D /* GeoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF09F7E1B147CE100502E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF09F7F1B147CE100502E2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CF09F811B147CE100502E2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2CF09F821B147CE100502E2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2CF09F841B147CE100502E2D /* FindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		2CF09F851B147CE100502E2D /* FindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		2CF09F871B147CE100502E2D /* ChatTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
+		2CF09F881B147CE100502E2D /* ChatTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewController.m; sourceTree = "<group>"; };
+		2CF09F8B1B147CE100502E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CF09F901B147CE100502E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2CF09F961B147CE100502E2D /* GeoChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF09F9B1B147CE100502E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF09F9C1B147CE100502E2D /* GeoChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoChatTests.m; sourceTree = "<group>"; };
+		2CF09FA81B1485BF00502E2D /* RegisterDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterDeviceController.h; sourceTree = "<group>"; };
+		2CF09FA91B1485BF00502E2D /* RegisterDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterDeviceController.m; sourceTree = "<group>"; };
+		2CF09FAA1B1485BF00502E2D /* RegisterDeviceController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterDeviceController.xib; sourceTree = "<group>"; };
+		2CF09FAD1B14882000502E2D /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
+		2CF09FAE1B14882000502E2D /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
+		2CF9A3D81B1606A000AD1C3C /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = GeoChat/Message.h; sourceTree = "<group>"; };
+		2CF9A3D91B1606A000AD1C3C /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = GeoChat/Message.m; sourceTree = "<group>"; };
+		2CF9A3DC1B163BDB00AD1C3C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2CFFCD761B21CBFA00695ADF /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		2CFFCD771B21CBFA00695ADF /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		2CFFCDB01B21E9E100695ADF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2CFFCDB31B21EA3400695ADF /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		2CFFCDB41B21EA3400695ADF /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		D8043A021B2068B700FB31EC /* UIColor+UIColor_CustomScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_CustomScheme.h"; sourceTree = "<group>"; };
+		D8043A031B2068B700FB31EC /* UIColor+UIColor_CustomScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_CustomScheme.m"; sourceTree = "<group>"; };
+		D8043A081B20827B00FB31EC /* GlobalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalViewController.h; sourceTree = "<group>"; };
+		D8043A091B20827B00FB31EC /* GlobalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalViewController.m; sourceTree = "<group>"; };
+		D8043A0B1B2083A200FB31EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D817F2ED1B21EDB000106AB4 /* ChatDB.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChatDB.sql; sourceTree = "<group>"; };
+		D83552011B29BB0C0060CD12 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		D83552021B29BB0C0060CD12 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		D83C122C1B28E57D008D0E50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D8958DAB1B1E0C8700BA9AFC /* FindTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindTableViewController.m; sourceTree = "<group>"; };
+		D8958DAD1B1F781600BA9AFC /* AddScoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddScoreButton.h; sourceTree = "<group>"; };
+		D8958DAE1B1F781600BA9AFC /* AddScoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddScoreButton.m; sourceTree = "<group>"; };
+		D8C8222A1B23405F00065F47 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		D8C8222B1B234FEA00065F47 /* NetworkMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkMethods.h; sourceTree = "<group>"; };
+		D8C8222C1B234FEA00065F47 /* NetworkMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkMethods.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CF09F771B147CE100502E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFFCDB11B21E9E100695ADF /* libsqlite3.dylib in Frameworks */,
+				D8043A0C1B2083A200FB31EC /* MapKit.framework in Frameworks */,
+				2CF9A3DD1B163BDB00AD1C3C /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF09F931B147CE100502E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CC801A11B14B2D60036E701 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				2CC801A61B14B3320036E701 /* NewMessage */,
+				2CF09F841B147CE100502E2D /* FindViewController.h */,
+				2CF09F851B147CE100502E2D /* FindViewController.m */,
+				2CD9AF801B17596500A7069F /* FindTableViewController.h */,
+				D8958DAB1B1E0C8700BA9AFC /* FindTableViewController.m */,
+				2C947DAA1B18AF280080A3F6 /* FindCell.xib */,
+				D8958DAD1B1F781600BA9AFC /* AddScoreButton.h */,
+				D8958DAE1B1F781600BA9AFC /* AddScoreButton.m */,
+			);
+			name = Find;
+			sourceTree = "<group>";
+		};
+		2CC801A21B14B2F60036E701 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				2CF09F871B147CE100502E2D /* ChatTableViewController.h */,
+				2CF09F881B147CE100502E2D /* ChatTableViewController.m */,
+				2CE68B841B232211001CE492 /* ConversationCell.xib */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		2CC801A31B14B2FE0036E701 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2CF09F811B147CE100502E2D /* AppDelegate.h */,
+				2CF09F821B147CE100502E2D /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2CC801A41B14B3090036E701 /* RegisterDevice */ = {
+			isa = PBXGroup;
+			children = (
+				2CF09FA81B1485BF00502E2D /* RegisterDeviceController.h */,
+				2CF09FA91B1485BF00502E2D /* RegisterDeviceController.m */,
+				D8C8222B1B234FEA00065F47 /* NetworkMethods.h */,
+				D8C8222C1B234FEA00065F47 /* NetworkMethods.m */,
+				2CF09FAA1B1485BF00502E2D /* RegisterDeviceController.xib */,
+			);
+			name = RegisterDevice;
+			sourceTree = "<group>";
+		};
+		2CC801A51B14B3190036E701 /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				2CF09FAD1B14882000502E2D /* TabViewController.h */,
+				2CF09FAE1B14882000502E2D /* TabViewController.m */,
+			);
+			name = TabController;
+			sourceTree = "<group>";
+		};
+		2CC801A61B14B3320036E701 /* NewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				2CC8019C1B14B2920036E701 /* NewMessageViewController.h */,
+				2CC8019D1B14B2920036E701 /* NewMessageViewController.m */,
+			);
+			name = NewMessage;
+			sourceTree = "<group>";
+		};
+		2CC801AB1B14C8C50036E701 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				2CC801A71B14C8B70036E701 /* NavigationViewController.h */,
+				2CC801A81B14C8B70036E701 /* NavigationViewController.m */,
+			);
+			name = NavigationController;
+			sourceTree = "<group>";
+		};
+		2CF09F711B147CE100502E2D = {
+			isa = PBXGroup;
+			children = (
+				2C4454931B2AD99700C879A4 /* PostCell.xib */,
+				2C4454901B2AD73600C879A4 /* Post.h */,
+				2C4454911B2AD73600C879A4 /* Post.m */,
+				2C9B51031B29E97D0020A2F6 /* MeViewController.h */,
+				2C9B51041B29E97D0020A2F6 /* MeViewController.m */,
+				D83552011B29BB0C0060CD12 /* SettingsViewController.h */,
+				D83552021B29BB0C0060CD12 /* SettingsViewController.m */,
+				2CFFCDB01B21E9E100695ADF /* libsqlite3.dylib */,
+				D8043A0B1B2083A200FB31EC /* MapKit.framework */,
+				2CF9A3DC1B163BDB00AD1C3C /* CoreLocation.framework */,
+				2CFFCDB21B21EA1600695ADF /* Database */,
+				2CF9A3DB1B1606A700AD1C3C /* Messaging */,
+				2CF09F7C1B147CE100502E2D /* GeoChat */,
+				2CF09F991B147CE100502E2D /* GeoChatTests */,
+				2CF09F7B1B147CE100502E2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CF09F7B1B147CE100502E2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CF09F7A1B147CE100502E2D /* GeoChat.app */,
+				2CF09F961B147CE100502E2D /* GeoChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CF09F7C1B147CE100502E2D /* GeoChat */ = {
+			isa = PBXGroup;
+			children = (
+				2CC801A31B14B2FE0036E701 /* AppDelegate */,
+				2CC801A11B14B2D60036E701 /* Find */,
+				2CC801A21B14B2F60036E701 /* Chat */,
+				2CF09F8A1B147CE100502E2D /* Main.storyboard */,
+				D8043A081B20827B00FB31EC /* GlobalViewController.h */,
+				D8043A091B20827B00FB31EC /* GlobalViewController.m */,
+				2CF09F8F1B147CE100502E2D /* LaunchScreen.xib */,
+				2CF09F7D1B147CE100502E2D /* Supporting Files */,
+				2CC801A41B14B3090036E701 /* RegisterDevice */,
+				2CC801A51B14B3190036E701 /* TabController */,
+				2CC801AB1B14C8C50036E701 /* NavigationController */,
+			);
+			path = GeoChat;
+			sourceTree = "<group>";
+		};
+		2CF09F7D1B147CE100502E2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CF09F7E1B147CE100502E2D /* Info.plist */,
+				2CF09F7F1B147CE100502E2D /* main.m */,
+				D8043A021B2068B700FB31EC /* UIColor+UIColor_CustomScheme.h */,
+				D8043A031B2068B700FB31EC /* UIColor+UIColor_CustomScheme.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CF09F991B147CE100502E2D /* GeoChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CF09F9C1B147CE100502E2D /* GeoChatTests.m */,
+				2CF09F9A1B147CE100502E2D /* Supporting Files */,
+			);
+			path = GeoChatTests;
+			sourceTree = "<group>";
+		};
+		2CF09F9A1B147CE100502E2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CF09F9B1B147CE100502E2D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CF9A3DB1B1606A700AD1C3C /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				D817F2ED1B21EDB000106AB4 /* ChatDB.sql */,
+				2CF9A3D81B1606A000AD1C3C /* Message.h */,
+				2CF9A3D91B1606A000AD1C3C /* Message.m */,
+				D8C8222A1B23405F00065F47 /* constants.h */,
+				2C86AB781B1DD28C00D31560 /* Conversation.h */,
+				2C86AB791B1DD28C00D31560 /* Conversation.m */,
+				2CFFCD761B21CBFA00695ADF /* ChatCell.h */,
+				2CFFCD771B21CBFA00695ADF /* ChatCell.m */,
+				2C86AB801B1DDA5E00D31560 /* ChatViewController.h */,
+				2C86AB811B1DDA5E00D31560 /* ChatViewController.m */,
+				2CB1B3CE1B1F88DB005B0E6E /* ChatCell.xib */,
+				2C86AB821B1DDA5E00D31560 /* ChatViewController.xib */,
+			);
+			name = Messaging;
+			sourceTree = "<group>";
+		};
+		2CFFCDB21B21EA1600695ADF /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D83C122C1B28E57D008D0E50 /* Images.xcassets */,
+				2CFFCDB31B21EA3400695ADF /* DBManager.h */,
+				2CFFCDB41B21EA3400695ADF /* DBManager.m */,
+			);
+			name = Database;
+			path = GeoChat.xcodeproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CF09F791B147CE100502E2D /* GeoChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF09FA01B147CE100502E2D /* Build configuration list for PBXNativeTarget "GeoChat" */;
+			buildPhases = (
+				2CF09F761B147CE100502E2D /* Sources */,
+				2CF09F771B147CE100502E2D /* Frameworks */,
+				2CF09F781B147CE100502E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoChat;
+			productName = GeoChat;
+			productReference = 2CF09F7A1B147CE100502E2D /* GeoChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CF09F951B147CE100502E2D /* GeoChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF09FA31B147CE100502E2D /* Build configuration list for PBXNativeTarget "GeoChatTests" */;
+			buildPhases = (
+				2CF09F921B147CE100502E2D /* Sources */,
+				2CF09F931B147CE100502E2D /* Frameworks */,
+				2CF09F941B147CE100502E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF09F981B147CE100502E2D /* PBXTargetDependency */,
+			);
+			name = GeoChatTests;
+			productName = GeoChatTests;
+			productReference = 2CF09F961B147CE100502E2D /* GeoChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CF09F721B147CE100502E2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Ivan Diaz";
+				TargetAttributes = {
+					2CF09F791B147CE100502E2D = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 458U552T46;
+					};
+					2CF09F951B147CE100502E2D = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 2CF09F791B147CE100502E2D;
+					};
+				};
+			};
+			buildConfigurationList = 2CF09F751B147CE100502E2D /* Build configuration list for PBXProject "GeoChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CF09F711B147CE100502E2D;
+			productRefGroup = 2CF09F7B1B147CE100502E2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CF09F791B147CE100502E2D /* GeoChat */,
+				2CF09F951B147CE100502E2D /* GeoChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CF09F781B147CE100502E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83C122D1B28E57D008D0E50 /* Images.xcassets in Resources */,
+				2CB1B3CF1B1F88DB005B0E6E /* ChatCell.xib in Resources */,
+				2CF09FAC1B1485BF00502E2D /* RegisterDeviceController.xib in Resources */,
+				2CF09F8C1B147CE100502E2D /* Main.storyboard in Resources */,
+				2CE68B851B232211001CE492 /* ConversationCell.xib in Resources */,
+				2C86AB841B1DDA5E00D31560 /* ChatViewController.xib in Resources */,
+				2CF09F911B147CE100502E2D /* LaunchScreen.xib in Resources */,
+				2C4454941B2AD99700C879A4 /* PostCell.xib in Resources */,
+				D817F2EE1B21EDB000106AB4 /* ChatDB.sql in Resources */,
+				2C947DAB1B18AF280080A3F6 /* FindCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF09F941B147CE100502E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CF09F761B147CE100502E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8958DAF1B1F781600BA9AFC /* AddScoreButton.m in Sources */,
+				D8958DAC1B1E0C8700BA9AFC /* FindTableViewController.m in Sources */,
+				2CF09FAF1B14882000502E2D /* TabViewController.m in Sources */,
+				2CC8019F1B14B2920036E701 /* NewMessageViewController.m in Sources */,
+				2CFFCDB51B21EA3400695ADF /* DBManager.m in Sources */,
+				2C86AB831B1DDA5E00D31560 /* ChatViewController.m in Sources */,
+				2CFFCD781B21CBFA00695ADF /* ChatCell.m in Sources */,
+				2CF09F891B147CE100502E2D /* ChatTableViewController.m in Sources */,
+				2CF09F831B147CE100502E2D /* AppDelegate.m in Sources */,
+				2C86AB7A1B1DD28C00D31560 /* Conversation.m in Sources */,
+				2CC801A91B14C8B70036E701 /* NavigationViewController.m in Sources */,
+				D83552031B29BB0C0060CD12 /* SettingsViewController.m in Sources */,
+				2CF09FAB1B1485BF00502E2D /* RegisterDeviceController.m in Sources */,
+				2C4454921B2AD73600C879A4 /* Post.m in Sources */,
+				2CF09F861B147CE100502E2D /* FindViewController.m in Sources */,
+				2C9B51051B29E97D0020A2F6 /* MeViewController.m in Sources */,
+				D8C8222D1B234FEA00065F47 /* NetworkMethods.m in Sources */,
+				2CF9A3DA1B1606A000AD1C3C /* Message.m in Sources */,
+				2CF09F801B147CE100502E2D /* main.m in Sources */,
+				D8043A0A1B20827B00FB31EC /* GlobalViewController.m in Sources */,
+				D8043A041B2068B700FB31EC /* UIColor+UIColor_CustomScheme.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF09F921B147CE100502E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF09F9D1B147CE100502E2D /* GeoChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CF09F981B147CE100502E2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF09F791B147CE100502E2D /* GeoChat */;
+			targetProxy = 2CF09F971B147CE100502E2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CF09F8A1B147CE100502E2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF09F8B1B147CE100502E2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CF09F8F1B147CE100502E2D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF09F901B147CE100502E2D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CF09F9E1B147CE100502E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2CF09F9F1B147CE100502E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CF09FA11B147CE100502E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = GeoChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d2b7f09c-0247-4434-9a87-fe453c1aa236";
+			};
+			name = Debug;
+		};
+		2CF09FA21B147CE100502E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = GeoChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d2b7f09c-0247-4434-9a87-fe453c1aa236";
+			};
+			name = Release;
+		};
+		2CF09FA41B147CE100502E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GeoChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoChat.app/GeoChat";
+			};
+			name = Debug;
+		};
+		2CF09FA51B147CE100502E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GeoChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoChat.app/GeoChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CF09F751B147CE100502E2D /* Build configuration list for PBXProject "GeoChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF09F9E1B147CE100502E2D /* Debug */,
+				2CF09F9F1B147CE100502E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF09FA01B147CE100502E2D /* Build configuration list for PBXNativeTarget "GeoChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF09FA11B147CE100502E2D /* Debug */,
+				2CF09FA21B147CE100502E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF09FA31B147CE100502E2D /* Build configuration list for PBXNativeTarget "GeoChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF09FA41B147CE100502E2D /* Debug */,
+				2CF09FA51B147CE100502E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CF09F721B147CE100502E2D /* Project object */;
+}

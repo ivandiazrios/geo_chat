@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterDeviceController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to register this device?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwQ-9e-6ms">
+                    <rect key="frame" x="155" y="70" width="291" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="QLB-Gf-fIJ"/>
+                        <constraint firstAttribute="width" constant="291" id="v7H-4t-fe7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNl-Z2-sDu">
+                    <rect key="frame" x="234" y="312" width="132" height="30"/>
+                    <state key="normal" title="REGISTER DEVICE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="registerDevice:" destination="-1" eventType="touchUpInside" id="5q4-9z-kDg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.20868055555555556" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="XNl-Z2-sDu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0zV-bI-yDT"/>
+                <constraint firstAttribute="bottom" secondItem="XNl-Z2-sDu" secondAttribute="bottom" constant="258" id="2xb-sK-hhQ"/>
+                <constraint firstItem="XNl-Z2-sDu" firstAttribute="centerX" secondItem="qwQ-9e-6ms" secondAttribute="centerX" id="QY6-O4-dSH"/>
+                <constraint firstItem="qwQ-9e-6ms" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="j6t-3D-TGG"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

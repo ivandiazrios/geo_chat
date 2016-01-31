@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Nm9-g6-lzN">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nm9-g6-lzN" id="WZq-UE-XQZ">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNq-ss-Ek0">
+                        <rect key="frame" x="33" y="12" width="259" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.6726398601398601" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="11" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJd-kV-TGY" customClass="AddScoreButton">
+                        <rect key="frame" x="-3" y="8" width="512" height="513"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37" id="f7Y-4N-WLh"/>
+                            <constraint firstAttribute="height" constant="30" id="ivV-mE-RrT"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="plus">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="disabled" backgroundImage="plusdis"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qJd-kV-TGY" firstAttribute="leading" secondItem="WZq-UE-XQZ" secondAttribute="leadingMargin" constant="-11" id="7A1-SR-87T"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jNq-ss-Ek0" secondAttribute="trailing" constant="-13" id="7rv-pX-6MO"/>
+                    <constraint firstAttribute="centerY" secondItem="qJd-kV-TGY" secondAttribute="centerY" id="HK7-Xh-14a"/>
+                    <constraint firstAttribute="centerY" secondItem="jNq-ss-Ek0" secondAttribute="centerY" id="cQe-f2-udO"/>
+                    <constraint firstItem="jNq-ss-Ek0" firstAttribute="leading" secondItem="WZq-UE-XQZ" secondAttribute="leadingMargin" constant="25" id="ewO-bR-liX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qJd-kV-TGY" secondAttribute="trailing" constant="245" id="f6y-Q7-Q1Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="-101" y="-411"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plus" width="512" height="512"/>
+        <image name="plusdis" width="512" height="512"/>
+    </resources>
+</document>
